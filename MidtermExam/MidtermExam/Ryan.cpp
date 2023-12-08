@@ -46,10 +46,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
     case WM_COMMAND:
         switch (LOWORD(wParam)) {
         case 1:
-            
+            selectShape = BOX;
+           
             break;
         case 2:
-          
+            selectShape = CIRCLE;
+            
             break;
         case 3:
             selectShape = BONOBONO;
